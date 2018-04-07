@@ -6,7 +6,13 @@ Full documentation [PyAV Docs](http://mikeboers.github.io/PyAV/index.html) and [
 
 How install [PyAV Install](http://mikeboers.github.io/PyAV/installation.html)
 
-Installation example
+# Installation example
+
+if  ffmpeg install source code
+    
+    ./configure --enable-network --enable-protocol=tcp --enable-demuxer=rtsp --enable-decoder=h264
+
+else
 
     sudo apt-get install ffmpeg x264
     
