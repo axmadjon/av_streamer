@@ -14,6 +14,7 @@ setup(
     version='1.0',
     author='Axmadjon Xamidov Ikrom og\'li',
     author_email='axmadjon.xamidov@gmail.com',
+    url='https://github.com/axmadjon/av-stremer',
     ext_modules=ext_modules,
     install_requires=requirements
 )
