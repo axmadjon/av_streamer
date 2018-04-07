@@ -1,9 +1,6 @@
-from pip.req import parse_requirements
 from setuptools import setup, Extension
 
-install_requirements = parse_requirements('requirements.txt', session='av_streamer')
-
-requirements = [str(ir.req) for ir in install_requirements]
+requirements = ['av==0.4.0']
 
 ext_modules = [
     Extension('av_streamer', ['av_streamer/__api.py'])
@@ -11,7 +8,7 @@ ext_modules = [
 
 setup(
     name='av_streamer',
-    version='1.0',
+    version='1.0.1',
     author='Axmadjon Xamidov Ikrom og\'li',
     author_email='axmadjon.xamidov@gmail.com',
     url='https://github.com/axmadjon/av_streamer',
