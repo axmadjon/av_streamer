@@ -11,6 +11,9 @@ How install [PyAV Install](http://mikeboers.github.io/PyAV/installation.html)
 if  ffmpeg install source code
     
     ./configure --enable-network --enable-protocol=tcp --enable-demuxer=rtsp --enable-decoder=h264
+    ./configure --disable-static --enable-shared --disable-doc
+    make
+    sudo make install
 
 else
 
