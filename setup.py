@@ -1,17 +1,16 @@
-from setuptools import setup, Extension
+from setuptools import setup
 
 requirements = ['av==0.4.0']
 
-ext_modules = [
-    Extension('av_streamer', ['av_streamer/__api.py'])
-]
-
 setup(
     name='av_streamer',
-    version='1.0.1',
+    version='1.0.3',
     author='Axmadjon Xamidov Ikrom og\'li',
     author_email='axmadjon.xamidov@gmail.com',
     url='https://github.com/axmadjon/av_streamer',
-    ext_modules=ext_modules,
+    packages=[
+        'av_streamer',
+    ],
+    package_dir={'av_streamer': 'av_streamer'},
     install_requires=requirements
 )
